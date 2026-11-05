@@ -55,7 +55,7 @@ namespace ImageViewer
 
         private void btnRight_Click(object sender, EventArgs e)
         {
-            startIndex += 1;
+            startIndex += pB.Length;
             endIndex = Math.Min(startIndex + pB.Length-1, fileNames.Length-1);
             UpdatePictureBoxes();
         }
